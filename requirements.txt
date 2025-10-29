@@ -1,0 +1,7 @@
+# FastAPI Framework
+fastapi==0.95.1
+uvicorn
+sentence-transformers
+# reranking test purposes
+transformers
+torch

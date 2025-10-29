@@ -1,0 +1,15 @@
+services:
+  python:
+    image: embeddings-service:2025-10-06
+    restart: no
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/app
+    networks:
+      - talk-to-skapa-poc-network
+
+networks:
+  talk-to-skapa-poc-network:
+    driver: bridge
+    name: talk-to-skapa-poc-network
